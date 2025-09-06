@@ -17,6 +17,8 @@ public:
 	// Sets default values for this actor's properties
 	ACajaDano();
 
+	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TObjectPtr<UBoxComponent> BoxCollision;
 

@@ -4,6 +4,7 @@
 #include "Actor/CajaDano.h"
 
 #include "Components/BoxComponent.h"
+#include "Interface/PlayerInterface.h"
 
 
 // Sets default values
@@ -29,3 +30,13 @@ void ACajaDano::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+void ACajaDano::NotifyActorBeginOverlap(AActor* OtherActor)
+{
+	Super::NotifyActorBeginOverlap(OtherActor);
+
+	if (OtherActor->Implements<UPlayerInterface>())
+	{
+		//IPlayerInterface::Execute_HacerDano();
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "Hacer daño");
+	}
+}
