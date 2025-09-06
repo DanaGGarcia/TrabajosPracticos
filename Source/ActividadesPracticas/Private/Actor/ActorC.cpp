@@ -2,6 +2,7 @@
 
 
 #include "Actor/ActorC.h"
+#include "Interface/PlayerInterface.h"
 #include "Components/SphereComponent.h"
 
 
@@ -39,8 +40,11 @@ void AActorC::NotifyActorBeginOverlap(AActor* OtherActor)
 {
 	Super::NotifyActorBeginOverlap(OtherActor);
 
-	
-
+	if (OtherActor->Implements<UPlayerInterface>())
+	{
+		
+	}
+		
 
 }
 

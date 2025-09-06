@@ -57,12 +57,12 @@ public:
 	AActividadesPracticasCharacter();	
 
 	//Implementacion Interfaz
-	
+	virtual void RecuperarVida_Implementation(float cura) override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
 	float VidaMaxima = 100.f;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats", meta = (ClampMin = 0, ClampMax = 100))
 	float VidaActual = 100.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")

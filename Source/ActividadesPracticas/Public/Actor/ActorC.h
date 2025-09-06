@@ -23,7 +23,7 @@ public:
 	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats", meta = (ClampMin = 0, ToolTip = "Salud del personaje"))
-	float Salud;
+	float Curacion;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats", meta = (ClampMin = 0, ClampMax = 5000, UIMin = 0, UIMax = 5000, ToolTip = "Escudo del personaje"))
 	int Escudo;

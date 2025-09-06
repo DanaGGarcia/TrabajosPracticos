@@ -50,6 +50,12 @@ AActividadesPracticasCharacter::AActividadesPracticasCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
+void AActividadesPracticasCharacter::RecuperarVida_Implementation(float cura)
+{
+	VidaActual += Cura;
+
+}
+
 
 
 void AActividadesPracticasCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

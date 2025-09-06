@@ -23,7 +23,10 @@ class ACTIVIDADESPRACTICAS_API IPlayerInterface
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	
-	
+	UFUNCTION(BluepintCallable, BlueprintNativeEvent)
+	void RecuperarVida(float cura);
 
-	
+	UFUNCTION(BluepintCallable, BlueprintNativeEvent)
+	void RestarVida();
+
 };
