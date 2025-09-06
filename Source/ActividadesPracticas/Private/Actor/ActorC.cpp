@@ -42,7 +42,8 @@ void AActorC::NotifyActorBeginOverlap(AActor* OtherActor)
 
 	if (OtherActor->Implements<UPlayerInterface>())
 	{
-		
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "golpe");
+		IPlayerInterface::Execute_RecuperarVida(OtherActor, Curacion);
 	}
 		
 

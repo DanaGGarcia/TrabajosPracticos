@@ -18,6 +18,9 @@ public:
 	ACajaDano();
 
 	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Danio;	
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TObjectPtr<UBoxComponent> BoxCollision;

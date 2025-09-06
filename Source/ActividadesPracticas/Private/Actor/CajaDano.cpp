@@ -37,6 +37,7 @@ void ACajaDano::NotifyActorBeginOverlap(AActor* OtherActor)
 	if (OtherActor->Implements<UPlayerInterface>())
 	{
 		//IPlayerInterface::Execute_HacerDano();
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "Hacer daño");
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "Hacer aca");
+		IPlayerInterface::Execute_RestarVida(OtherActor, Danio);
 	}
 }
