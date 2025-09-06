@@ -16,6 +16,18 @@ public:
 	// Sets default values for this component's properties
 	UComponenteSalud();
 
+	UPROPERTY(BlueprintReadWrite,EditAnywhere)
+	float VidaMaxima;
+
+	UPROPERTY(BlueprintReadWrite,EditAnywhere)
+	float VidaActual;
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void RecuperarVida(float Cura);
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void RestarVida( float Danio);
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

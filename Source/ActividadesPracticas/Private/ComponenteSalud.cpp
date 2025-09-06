@@ -15,6 +15,14 @@ UComponenteSalud::UComponenteSalud()
 }
 
 
+void UComponenteSalud::RecuperarVida_Implementation(float Cura)
+{
+}
+
+void UComponenteSalud::RestarVida_Implementation(float Danio)
+{
+}
+
 // Called when the game starts
 void UComponenteSalud::BeginPlay()
 {
