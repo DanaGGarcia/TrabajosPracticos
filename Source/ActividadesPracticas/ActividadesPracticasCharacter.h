@@ -56,6 +56,18 @@ public:
 	/** Constructor */
 	AActividadesPracticasCharacter();	
 
+	//Implementacion Interfaz
+	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	float VidaMaxima = 100.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	float VidaActual = 100.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	float Cura = 10.f;
+
 protected:
 
 	/** Initialize input action bindings */

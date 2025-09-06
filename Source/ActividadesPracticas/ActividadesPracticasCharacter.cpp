@@ -50,6 +50,8 @@ AActividadesPracticasCharacter::AActividadesPracticasCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
+
+
 void AActividadesPracticasCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Set up action bindings
