@@ -29,6 +29,9 @@ public:
 	int Escudo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int CantidadItem = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TObjectPtr<USphereComponent> SphereCollision;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)

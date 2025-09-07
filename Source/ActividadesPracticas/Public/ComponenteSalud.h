@@ -17,16 +17,16 @@ public:
 	UComponenteSalud();
 
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
-	float VidaMaxima;
+	float VidaMaxima=100.f;
 
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
-	float VidaActual;
+	float VidaActual=100.f;
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void RecuperarVida(float Cura);
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	void RestarVida( float Danio);
+	void RestarVida(float Danio);
 	
 protected:
 	// Called when the game starts

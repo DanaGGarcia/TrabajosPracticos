@@ -52,10 +52,14 @@ AActividadesPracticasCharacter::AActividadesPracticasCharacter()
 
 void AActividadesPracticasCharacter::RecuperarVida_Implementation(float cura)
 {
-	VidaActual += Cura;
-
+	IPlayerInterface::RecuperarVida_Implementation(cura);
 }
 
+void AActividadesPracticasCharacter::AgregarItem_Implementation(int CantidadItem)
+{
+	Item += CantidadItem;
+
+}
 
 
 void AActividadesPracticasCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

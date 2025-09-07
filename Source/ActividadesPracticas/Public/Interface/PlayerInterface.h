@@ -29,4 +29,7 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void RestarVida( float Danio);
 
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void AgregarItem(int CantidadItem);
+	
 };

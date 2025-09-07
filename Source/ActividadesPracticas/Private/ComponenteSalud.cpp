@@ -12,15 +12,20 @@ UComponenteSalud::UComponenteSalud()
 	PrimaryComponentTick.bCanEverTick = true;
 
 	// ...
+	
+	
 }
 
 
 void UComponenteSalud::RecuperarVida_Implementation(float Cura)
 {
+	VidaActual+=Cura;
 }
 
 void UComponenteSalud::RestarVida_Implementation(float Danio)
 {
+	VidaActual-=Danio;
+	
 }
 
 // Called when the game starts

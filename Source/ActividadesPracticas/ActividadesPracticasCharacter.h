@@ -59,14 +59,10 @@ public:
 	//Implementacion Interfaz
 	virtual void RecuperarVida_Implementation(float cura) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
-	float VidaMaxima = 100.f;
+	virtual void AgregarItem_Implementation(int CantidadItem) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats", meta = (ClampMin = 0, ClampMax = 100))
-	float VidaActual = 100.f;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
-	float Cura = 10.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int Item;
 
 protected:
 
