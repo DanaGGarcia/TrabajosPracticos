@@ -19,7 +19,7 @@ public:
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	float VidaMaxima=100.f;
 
-	UPROPERTY(BlueprintReadWrite,EditAnywhere)
+	UPROPERTY(BlueprintReadWrite,EditAnywhere, meta=(ClampMin="0", ClampMax="100"))
 	float VidaActual=100.f;
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
